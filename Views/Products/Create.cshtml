@@ -1,0 +1,43 @@
+@model Garcia_Midterm_Store.Models.Product
+
+<h1>Add Product</h1>
+
+<form asp-action="Create" method="post">
+
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Description</label>
+        <input asp-for="Description" />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Price</label>
+        <input asp-for="Price" />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Category</label>
+        <input asp-for="Category" />
+    </div>
+
+    <br />
+
+    <button type="submit" class="btn btn-primary">
+        Create
+    </button>
+
+    <a asp-action="Index" class="btn btn-secondary">
+        Back to Products
+    </a>
+
+</form>
